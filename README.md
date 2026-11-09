@@ -33,7 +33,8 @@ Built for **Minecraft Java Edition 1.14.4** (`pack_format` 4).
 
 1. Copy `MyCommand/commands/*.yml` into `plugins/MyCommand/commands/`.
 2. Run `/mycmd reload` (or restart the server).
-3. `/random` is registered in MyCommand with no permission node, so it is available to every player.
+3. `/random` is registered in MyCommand with no permission node, so every player can use it. It has a
+   30-second cooldown and only runs in the `world` and `world_the_end` dimensions.
 
 ## `/random`
 
