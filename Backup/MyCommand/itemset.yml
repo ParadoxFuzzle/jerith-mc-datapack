@@ -15,8 +15,8 @@ itemset:
       name: "SuperSword"
       on_rightclick: "/me right!"
       on_leftclick: "/me left!"
-  joshtiger:
+  jerith:
     STICK:
       name: "§5Magic Wand"
-      on_rightclick: "/function joshtiger:magic/castspell/magicbullets2"
-      on_leftclick: "/function joshtiger:magic/castspell/magicbullets"
+      on_rightclick: "/function jerith:magic/castspell/magicbullets2"
+      on_leftclick: "/function jerith:magic/castspell/magicbullets"

@@ -10,19 +10,19 @@ deathroll:
   command: /deathroll
   type: RUN_CONSOLE_RANDOM
   runcmd:
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/death
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe1
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe2
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe3
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe4
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe5
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe6
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe7
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe8
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe9
-  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe10
+  - /execute as $player at @s run function jerith:commands/-deathroll/death
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe1
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe2
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe3
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe4
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe5
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe6
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe7
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe8
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe9
+  - /execute as $player at @s run function jerith:commands/-deathroll/safe10
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cThis command is currently undergoing some maintenance."
+  permission-error: "&9[&2&lJerith&9]: &cThis command is currently undergoing some maintenance."
   permission-required: false
   cooldown: 15
   register: true
@@ -31,28 +31,28 @@ luckyroll:
   command: /luckyroll
   type: RUN_CONSOLE_RANDOM
   runcmd:
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/death
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/2
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/3
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/4
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/5
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/6
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/7
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/8
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/9
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/10
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/11
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/12
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/13
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/14
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/15
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/16
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/17
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/18
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/19
-  - /execute as $player at @s run function joshtiger:commands/-luckyroll/win
+  - /execute as $player at @s run function jerith:commands/-luckyroll/death
+  - /execute as $player at @s run function jerith:commands/-luckyroll/2
+  - /execute as $player at @s run function jerith:commands/-luckyroll/3
+  - /execute as $player at @s run function jerith:commands/-luckyroll/4
+  - /execute as $player at @s run function jerith:commands/-luckyroll/5
+  - /execute as $player at @s run function jerith:commands/-luckyroll/6
+  - /execute as $player at @s run function jerith:commands/-luckyroll/7
+  - /execute as $player at @s run function jerith:commands/-luckyroll/8
+  - /execute as $player at @s run function jerith:commands/-luckyroll/9
+  - /execute as $player at @s run function jerith:commands/-luckyroll/10
+  - /execute as $player at @s run function jerith:commands/-luckyroll/11
+  - /execute as $player at @s run function jerith:commands/-luckyroll/12
+  - /execute as $player at @s run function jerith:commands/-luckyroll/13
+  - /execute as $player at @s run function jerith:commands/-luckyroll/14
+  - /execute as $player at @s run function jerith:commands/-luckyroll/15
+  - /execute as $player at @s run function jerith:commands/-luckyroll/16
+  - /execute as $player at @s run function jerith:commands/-luckyroll/17
+  - /execute as $player at @s run function jerith:commands/-luckyroll/18
+  - /execute as $player at @s run function jerith:commands/-luckyroll/19
+  - /execute as $player at @s run function jerith:commands/-luckyroll/win
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cThis command is currently undergoing some maintenance."
+  permission-error: "&9[&2&lJerith&9]: &cThis command is currently undergoing some maintenance."
   permission-required: false
   cooldown: 15
   register: true
@@ -62,95 +62,138 @@ random:
   type: RUN_CONSOLE_RANDOM
   runcmd:
   
-  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question1
-  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question2
-  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question3
-  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question4
-  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question5
-  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question6
+  - /execute as $player at @s run function jerith:commands/-random/message/self/question1
+  - /execute as $player at @s run function jerith:commands/-random/message/self/question2
+  - /execute as $player at @s run function jerith:commands/-random/message/self/question3
+  - /execute as $player at @s run function jerith:commands/-random/message/self/question4
+  - /execute as $player at @s run function jerith:commands/-random/message/self/question5
+  - /execute as $player at @s run function jerith:commands/-random/message/self/question6
   
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/firespell
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/fishgills
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/fullheal
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/godmode
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut1
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut2
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut3
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/hyper
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/mrrichie
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/mysticalwizard
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/overpowered
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/sanic
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/speed3
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/speed4
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/supervision
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/xpbar1
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/xpbar2
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/firespell
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/fishgills
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/fullheal
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/godmode
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/healthnut1
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/healthnut2
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/healthnut3
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/hyper
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/mrrichie
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/mysticalwizard
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/overpowered
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/sanic
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/speed3
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/speed4
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/supervision
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/xpbar1
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/xpbar2
   
-  - /execute as $player at @s run function joshtiger:commands/-random/good/haste2
-  - /execute as $player at @s run function joshtiger:commands/-random/good/haste3
-  - /execute as $player at @s run function joshtiger:commands/-random/good/invisible
-  - /execute as $player at @s run function joshtiger:commands/-random/good/john
-  - /execute as $player at @s run function joshtiger:commands/-random/good/lowgravity
-  - /execute as $player at @s run function joshtiger:commands/-random/good/luck
-  - /execute as $player at @s run function joshtiger:commands/-random/good/lumberjack
-  - /execute as $player at @s run function joshtiger:commands/-random/good/mrcolorful
-  - /execute as $player at @s run function joshtiger:commands/-random/good/nighteye
-  - /execute as $player at @s run function joshtiger:commands/-random/good/regeneration
-  - /execute as $player at @s run function joshtiger:commands/-random/good/speed
-  - /execute as $player at @s run function joshtiger:commands/-random/good/speed2
-  - /execute as $player at @s run function joshtiger:commands/-random/good/clearbadomen
+  - /execute as $player at @s run function jerith:commands/-random/good/haste2
+  - /execute as $player at @s run function jerith:commands/-random/good/haste3
+  - /execute as $player at @s run function jerith:commands/-random/good/invisible
+  - /execute as $player at @s run function jerith:commands/-random/good/john
+  - /execute as $player at @s run function jerith:commands/-random/good/lowgravity
+  - /execute as $player at @s run function jerith:commands/-random/good/luck
+  - /execute as $player at @s run function jerith:commands/-random/good/lumberjack
+  - /execute as $player at @s run function jerith:commands/-random/good/mrcolorful
+  - /execute as $player at @s run function jerith:commands/-random/good/nighteye
+  - /execute as $player at @s run function jerith:commands/-random/good/regeneration
+  - /execute as $player at @s run function jerith:commands/-random/good/speed
+  - /execute as $player at @s run function jerith:commands/-random/good/speed2
+  - /execute as $player at @s run function jerith:commands/-random/good/clearbadomen
  
-  - /execute as $player at @s run function joshtiger:commands/-random/other/canttouch
-  - /execute as $player at @s run function joshtiger:commands/-random/other/canttouch2
-  - /execute as $player at @s run function joshtiger:commands/-random/other/disappointment
-  - /execute as $player at @s run function joshtiger:commands/-random/other/flip
-  - /execute as $player at @s run function joshtiger:commands/-random/other/flyingaway
-  - /execute as $player at @s run function joshtiger:commands/-random/other/groundslap
-  - /execute as $player at @s run function joshtiger:commands/-random/other/harmlesscreepers
-  - /execute as $player at @s run function joshtiger:commands/-random/other/mrgreen
-  - /execute as $player at @s run function joshtiger:commands/-random/other/mrsplashy
-  - /execute as $player at @s run function joshtiger:commands/-random/other/salmon
-  - /execute as $player at @s run function joshtiger:commands/-random/other/sneakycookie
-  - /execute as $player at @s run function joshtiger:commands/-random/other/batbomb
+  - /execute as $player at @s run function jerith:commands/-random/other/canttouch
+  - /execute as $player at @s run function jerith:commands/-random/other/canttouch2
+  - /execute as $player at @s run function jerith:commands/-random/other/disappointment
+  - /execute as $player at @s run function jerith:commands/-random/other/flip
+  - /execute as $player at @s run function jerith:commands/-random/other/flyingaway
+  - /execute as $player at @s run function jerith:commands/-random/other/groundslap
+  - /execute as $player at @s run function jerith:commands/-random/other/harmlesscreepers
+  - /execute as $player at @s run function jerith:commands/-random/other/mrgreen
+  - /execute as $player at @s run function jerith:commands/-random/other/mrsplashy
+  - /execute as $player at @s run function jerith:commands/-random/other/salmon
+  - /execute as $player at @s run function jerith:commands/-random/other/sneakycookie
+  - /execute as $player at @s run function jerith:commands/-random/other/batbomb
   
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/badluck
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/blindness
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/blockedmining
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/cactus
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/confused
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/confused2
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/levitation
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/levitation2
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/nommer
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/pointyfish
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/poison
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/shotintospace
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness2
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness3
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/tridents
+  - /execute as $player at @s run function jerith:commands/-random/bad/badluck
+  - /execute as $player at @s run function jerith:commands/-random/bad/blindness
+  - /execute as $player at @s run function jerith:commands/-random/bad/blockedmining
+  - /execute as $player at @s run function jerith:commands/-random/bad/cactus
+  - /execute as $player at @s run function jerith:commands/-random/bad/confused
+  - /execute as $player at @s run function jerith:commands/-random/bad/confused2
+  - /execute as $player at @s run function jerith:commands/-random/bad/levitation
+  - /execute as $player at @s run function jerith:commands/-random/bad/levitation2
+  - /execute as $player at @s run function jerith:commands/-random/bad/nommer
+  - /execute as $player at @s run function jerith:commands/-random/bad/pointyfish
+  - /execute as $player at @s run function jerith:commands/-random/bad/poison
+  - /execute as $player at @s run function jerith:commands/-random/bad/shotintospace
+  - /execute as $player at @s run function jerith:commands/-random/bad/slowness
+  - /execute as $player at @s run function jerith:commands/-random/bad/slowness2
+  - /execute as $player at @s run function jerith:commands/-random/bad/slowness3
+  - /execute as $player at @s run function jerith:commands/-random/bad/tridents
   
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/lightning
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/nearestmob
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/nommers
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/poisongas
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/serialkiller
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/mafia
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/lightning
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/nearestmob
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/nommers
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/poisongas
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/serialkiller
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/mafia
   
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/elytragift
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/goldenfeast
+  - /execute as $player at @s run function jerith:commands/-random/good/petparrot
+  - /execute as $player at @s run function jerith:commands/-random/good/jackpot
+  - /execute as $player at @s run function jerith:commands/-random/good/rainbowburst
+  - /execute as $player at @s run function jerith:commands/-random/other/confettibomb
+  - /execute as $player at @s run function jerith:commands/-random/other/cowstampede
+  - /execute as $player at @s run function jerith:commands/-random/other/snowglobe
+  - /execute as $player at @s run function jerith:commands/-random/bad/hungrybelly
+  - /execute as $player at @s run function jerith:commands/-random/bad/wobblylegs
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/anvillove
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/cursed
+  - /execute as $player at @s run function jerith:commands/-random/jackpot/diamondrain
+  - /execute as $player at @s run function jerith:commands/-random/jackpot/levelrush
+  - /execute as $player at @s run function jerith:commands/-random/jackpot/royalchest
+  - /execute as $player at @s run function jerith:commands/-random/jackpot/godblade
+  - /execute as $player at @s run function jerith:commands/-random/jackpot/luckyboots
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/regengas
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/removebadeffects
+  - /execute as $player at @s run function jerith:commands/-random/good/fullyinvisible
+  - /execute as $player at @s run function jerith:commands/-random/good/mobsonfire
+  - /execute as $player at @s run function jerith:commands/-random/good/warpxporbs
+  - /execute as $player at @s run function jerith:commands/-random/other/add1effectmin
+  - /execute as $player at @s run function jerith:commands/-random/other/add30effectsec
+  - /execute as $player at @s run function jerith:commands/-random/other/babyanimals
+  - /execute as $player at @s run function jerith:commands/-random/other/baker
+  - /execute as $player at @s run function jerith:commands/-random/other/bobthepurplepig
+  - /execute as $player at @s run function jerith:commands/-random/other/burningchickens
+  - /execute as $player at @s run function jerith:commands/-random/other/canttouchold
+  - /execute as $player at @s run function jerith:commands/-random/other/cleareffect
+  - /execute as $player at @s run function jerith:commands/-random/other/dinothechicken
+  - /execute as $player at @s run function jerith:commands/-random/other/dolphin
+  - /execute as $player at @s run function jerith:commands/-random/other/evillaugh
+  - /execute as $player at @s run function jerith:commands/-random/other/magicalblocks
+  - /execute as $player at @s run function jerith:commands/-random/other/magikarps
+  - /execute as $player at @s run function jerith:commands/-random/other/sadness
+  - /execute as $player at @s run function jerith:commands/-random/other/scaredsquid
+  - /execute as $player at @s run function jerith:commands/-random/other/snowman
+  - /execute as $player at @s run function jerith:commands/-random/other/spittingllama
+  - /execute as $player at @s run function jerith:commands/-random/bad/poisonwater
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/frozen
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/liveinneather
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/seacreature
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
 
-  error-message: "&9[&2&lJ&6&lT&9]: &cThis command can only be used in the overworld and end"
-  permission-error: "&9[&2&lJ&6&lT&9]: &cThis command is currently undergoing some maintenance."
+  error-message: "&9[&2&lJerith&9]: &cThis command can only be used in the overworld and end"
+  permission-error: "&9[&2&lJerith&9]: &cThis command is currently undergoing some maintenance."
   permission-required: false
   cooldown: 30
   register: true
@@ -162,8 +205,8 @@ Randomness:
   command: /Randomness
   type: RUN_CONSOLE
   runcmd:
-  - /execute as $player at @s run playsound gamez.beep.11 master @s ~ ~ ~ 5 1.2
-  - /execute as $player at @s run function joshtiger:commands/-random/display_randomness
+  - /execute as $player at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 5 1.2
+  - /execute as $player at @s run function jerith:commands/-random/display_randomness
 
   permission-error: "&cError: This command is offline."
   permission-required: false
@@ -173,8 +216,8 @@ Randoms:
   command: /Randoms
   type: RUN_CONSOLE
   runcmd:
-  - /execute as $player at @s run playsound gamez.beep.11 master @s ~ ~ ~ 5 1.2
-  - /execute as $player at @s run function joshtiger:commands/-random/display_players
+  - /execute as $player at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 5 1.2
+  - /execute as $player at @s run function jerith:commands/-random/display_players
 
   permission-error: "&cError: This command is offline."
   permission-required: false
@@ -184,10 +227,10 @@ RandomCommands:
   command: /randomcommands
   type: RUN_CONSOLE
   runcmd:
-  - /execute as $player at @s run playsound gamez.beep.11 master @s ~ ~ ~ 5 1.2
-  - /execute as $player at @s run function joshtiger:commands/-random/display_commands
+  - /execute as $player at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 5 1.2
+  - /execute as $player at @s run function jerith:commands/-random/display_commands
   
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
   register: true
   
@@ -195,9 +238,9 @@ sparkle:
   command: /sparkle
   type: RUN_CONSOLE
   runcmd:
-  - /execute as $player at @s run function joshtiger:commands/-random/commands/sparkle
+  - /execute as $player at @s run function jerith:commands/-random/commands/sparkle
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
   register: true
   
@@ -205,10 +248,10 @@ rocketjump:
   command: /rocketjump
   type: RUN_CONSOLE
   runcmd:
-  - /execute as $player at @s run function joshtiger:commands/-random/commands/rocketjump
+  - /execute as $player at @s run function jerith:commands/-random/commands/rocketjump
 
-  error-message: "&9[&2&lJ&6&lT&9]: &cInvalid world, can only be used in Survival world."
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  error-message: "&9[&2&lJerith&9]: &cInvalid world, can only be used in Survival world."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
   cooldown: 5
   register: true
@@ -219,9 +262,9 @@ spookysound:
   command: /spookysound
   type: RUN_CONSOLE
   runcmd:
-  - /execute as $player at @s run function joshtiger:commands/-random/commands/spookysound
+  - /execute as $player at @s run function jerith:commands/-random/commands/spookysound
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
   cooldown: 12
   register: true
@@ -230,84 +273,83 @@ debug_random:
   command: /debug_random
   type: RUN_CONSOLE_RANDOM
   runcmd:
-  - /execute as $player at @s run function joshtiger:commands/-random/message/self/error
+  - /execute as $player at @s run function jerith:commands/-random/message/self/error
   
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/firespell
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/fishgills
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/fullheal
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/godmode
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut1
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut2
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut3
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/hyper
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/mrrichie
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/mysticalwizard
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/overpowered
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/sanic
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/speed3
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/speed4
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/supervision
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/xpbar1
-  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/xpbar2
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/firespell
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/fishgills
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/fullheal
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/godmode
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/healthnut1
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/healthnut2
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/healthnut3
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/hyper
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/mrrichie
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/mysticalwizard
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/overpowered
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/sanic
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/speed3
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/speed4
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/supervision
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/xpbar1
+  - /execute as $player at @s run function jerith:commands/-random/reallygood/xpbar2
   
-  - /execute as $player at @s run function joshtiger:commands/-random/good/haste2
-  - /execute as $player at @s run function joshtiger:commands/-random/good/haste3
-  - /execute as $player at @s run function joshtiger:commands/-random/good/invisible
-  - /execute as $player at @s run function joshtiger:commands/-random/good/luck
-  - /execute as $player at @s run function joshtiger:commands/-random/good/mrcolorful
-  - /execute as $player at @s run function joshtiger:commands/-random/good/nighteye
-  - /execute as $player at @s run function joshtiger:commands/-random/good/regeneration
-  - /execute as $player at @s run function joshtiger:commands/-random/good/speed
-  - /execute as $player at @s run function joshtiger:commands/-random/good/speed2
-  - /execute as $player at @s run function joshtiger:commands/-random/good/lumberjack
-  - /execute as $player at @s run function joshtiger:commands/-random/good/john
+  - /execute as $player at @s run function jerith:commands/-random/good/haste2
+  - /execute as $player at @s run function jerith:commands/-random/good/haste3
+  - /execute as $player at @s run function jerith:commands/-random/good/invisible
+  - /execute as $player at @s run function jerith:commands/-random/good/luck
+  - /execute as $player at @s run function jerith:commands/-random/good/mrcolorful
+  - /execute as $player at @s run function jerith:commands/-random/good/nighteye
+  - /execute as $player at @s run function jerith:commands/-random/good/regeneration
+  - /execute as $player at @s run function jerith:commands/-random/good/speed
+  - /execute as $player at @s run function jerith:commands/-random/good/speed2
+  - /execute as $player at @s run function jerith:commands/-random/good/lumberjack
+  - /execute as $player at @s run function jerith:commands/-random/good/john
  
-  - /execute as $player at @s run function joshtiger:commands/-random/other/canttouch
-  - /execute as $player at @s run function joshtiger:commands/-random/other/canttouch2
-  - /execute as $player at @s run function joshtiger:commands/-random/other/disappointment
-  - /execute as $player at @s run function joshtiger:commands/-random/other/flip
-  - /execute as $player at @s run function joshtiger:commands/-random/other/flyingaway
-  - /execute as $player at @s run function joshtiger:commands/-random/other/groundslap
-  - /execute as $player at @s run function joshtiger:commands/-random/other/harmlesscreepers
-  - /execute as $player at @s run function joshtiger:commands/-random/other/mrgreen
-  - /execute as $player at @s run function joshtiger:commands/-random/other/mrsplashy
-  - /execute as $player at @s run function joshtiger:commands/-random/other/salmon
-  - /execute as $player at @s run function joshtiger:commands/-random/other/sneakycookie
+  - /execute as $player at @s run function jerith:commands/-random/other/canttouch
+  - /execute as $player at @s run function jerith:commands/-random/other/canttouch2
+  - /execute as $player at @s run function jerith:commands/-random/other/disappointment
+  - /execute as $player at @s run function jerith:commands/-random/other/flip
+  - /execute as $player at @s run function jerith:commands/-random/other/flyingaway
+  - /execute as $player at @s run function jerith:commands/-random/other/groundslap
+  - /execute as $player at @s run function jerith:commands/-random/other/harmlesscreepers
+  - /execute as $player at @s run function jerith:commands/-random/other/mrgreen
+  - /execute as $player at @s run function jerith:commands/-random/other/mrsplashy
+  - /execute as $player at @s run function jerith:commands/-random/other/salmon
+  - /execute as $player at @s run function jerith:commands/-random/other/sneakycookie
   
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/badluck
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/blindness
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/blockedmining
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/cactus
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/confused
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/confused2
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/floating1
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/nommer
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/pointyfish
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/poison
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness2
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness3
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/tridents
-  - /execute as $player at @s run function joshtiger:commands/-random/bad/shotintospace
+  - /execute as $player at @s run function jerith:commands/-random/bad/badluck
+  - /execute as $player at @s run function jerith:commands/-random/bad/blindness
+  - /execute as $player at @s run function jerith:commands/-random/bad/blockedmining
+  - /execute as $player at @s run function jerith:commands/-random/bad/cactus
+  - /execute as $player at @s run function jerith:commands/-random/bad/confused
+  - /execute as $player at @s run function jerith:commands/-random/bad/confused2
+  - /execute as $player at @s run function jerith:commands/-random/bad/nommer
+  - /execute as $player at @s run function jerith:commands/-random/bad/pointyfish
+  - /execute as $player at @s run function jerith:commands/-random/bad/poison
+  - /execute as $player at @s run function jerith:commands/-random/bad/slowness
+  - /execute as $player at @s run function jerith:commands/-random/bad/slowness2
+  - /execute as $player at @s run function jerith:commands/-random/bad/slowness3
+  - /execute as $player at @s run function jerith:commands/-random/bad/tridents
+  - /execute as $player at @s run function jerith:commands/-random/bad/shotintospace
   
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/nearestmob
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/nommers
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/poisongas
-  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/serialkiller
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/nearestmob
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/nommers
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/poisongas
+  - /execute as $player at @s run function jerith:commands/-random/reallybad/serialkiller
   
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
 
-  error-message: "&9[&2&lJ&6&lT&9]: &cThis command can only be used in the overworld and end"
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  error-message: "&9[&2&lJerith&9]: &cThis command can only be used in the overworld and end"
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
   cooldown: 94127
   allowed_worlds:
@@ -318,9 +360,9 @@ random_broke:
   command: /random_broke
   type: RUN_CONSOLE_RANDOM
   runcmd:
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function jerith:commands/-random/nothing
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: true
   cooldown: 94127
 
@@ -330,14 +372,14 @@ forcerandom:
   type: RUN_CONSOLE_RANDOM
   runcmd:
 
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
-  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
+  - /execute as $player at @s run function jerith:commands/-random/nothing2
+  - /execute as $player at @s run function jerith:commands/-random/nothing2
+  - /execute as $player at @s run function jerith:commands/-random/nothing2
+  - /execute as $player at @s run function jerith:commands/-random/nothing2
+  - /execute as $player at @s run function jerith:commands/-random/nothing2
 
-  error-message: "&9[&2&lJ&6&lT&9]: &cInvalid world, can only be used in Survival world."
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  error-message: "&9[&2&lJerith&9]: &cInvalid world, can only be used in Survival world."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: true
   allowed_worlds:
   - world
@@ -353,10 +395,10 @@ randommsg:
    - /setrandomcolor
    - /setrandomeffect
    - /setrandommsg
-   - '$broadcasttext$&9[&2&lJ&6&lT&5RandomMsg&9]: &b$PlayerData%msg%'
+   - '$broadcasttext$&9[&2&lJerith&5RandomMsg&9]: &b$PlayerData%msg%'
 
   cooldown: 10
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
 
 setrandommood:
@@ -372,7 +414,7 @@ setrandommood:
    - $Script$%PlayerData%randommood=&bHyper
    - $Script$%PlayerData%randommood=&eAnnoyed
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
   
 setrandomeffect:
@@ -387,7 +429,7 @@ setrandomeffect:
    - $Script$%PlayerData%randomeffect=&bFast
    - $Script$%PlayerData%randomeffect=&5Crazy
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
   
 setrandomlocation:
@@ -410,7 +452,7 @@ setrandomlocation:
    - $Script$%PlayerData%randomlocation=&9Pet store
 
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
   
 setrandomobject:
@@ -448,7 +490,7 @@ setrandomobject:
    - $Script$%PlayerData%randomobject=&3Mirror
    - $Script$%PlayerData%randomobject=&3Cactus
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
 
 setrandomcolor:
@@ -464,7 +506,7 @@ setrandomcolor:
    - $Script$%PlayerData%randomcolor=&dPink
    - $Script$%PlayerData%randomcolor=&5Purple
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false
 
   
@@ -491,5 +533,5 @@ setrandommsg:
    - $Script$%PlayerData%msg=&a$player &7is now a $PlayerData%randomeffect% $PlayerData%randomobject%&7.
    - $Script$%PlayerData%msg=&a$player &7tried to slap &a$randomplayer &7but failed.
 
-  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
   permission-required: false

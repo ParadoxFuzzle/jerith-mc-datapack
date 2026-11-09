@@ -1,0 +1,260 @@
+rank:
+  command: /rank
+  type: ALIAS
+  alias: /ranks
+  permission-required: false
+  
+jerith:
+  command: /jerith
+  type: ALIAS
+  alias: /jerith
+  permission-required: false
+  register: true
+  
+Warpa:
+  command: /Warpa
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as @s[tag=RulesAccepted] at @s run function jerith:commands/-warpa/warpa #cut some fat; runs the warpa command as usual
+  - /execute as @s[tag=!RulesAccepted] at @s run tellraw @s {"text":"&f[&5&lJIMBO&f] &cDo /rules to advance.","color":"red"} #cut some fat, gives an error if rules not yet accepted.
+  - $delay$/execute as @s[tag=RulesAccepted] at @s run function jerith:casteffect/1 #cut some fat.
+
+  delaytimer: 1
+  delaytimer_format: TICKS
+  cooldown: 10
+  error-message: "&f[&4&lJerith&f]: &cInvalid world, can only be used in Survival and End world."
+  permission-error: "f[&4&lJerith&f]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  allowed_worlds:
+  - world
+  - world_the_end
+
+IAcceptTheRulesOwO:
+  command: /IAcceptTheRulesOwO
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s if entity @s[tag=RulesAccepted] run tellraw @s {"text":"&9[&2&lJerith&9] &eYou have already accepted the rules. o3o","color":"red"}
+  - /execute as $player at @s if entity @s[tag=!RulesAccepted] run tellraw @s {"text":"&9[&2&lJerith&9] &aYou have accepted the rules. :D","color":"green"}
+  - /execute as $player at @s if entity @s[tag=!RulesAccepted] run tellraw @a[tag=IsStaff] {"text":"&c[&2&lJerith&c] &a$player &dAccepted the rules.","color":"light_purple"}
+  - /execute as $player at @s if entity @s[tag=!RulesAccepted] run tag @s[tag=!RulesAccepted] add RulesAccepted
+
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+ranks:
+  command: /ranks
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 5 1.35
+  - '$text$&6&lDisplaying rank infos o3o'
+  - '$text$&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-'
+  - '$text$&b'
+  - '$text$&7[&cNewComer&7] &7- &6Given to new players'
+  - '$text$&7[&2Member&7] &7- &6Have &b10 hours&6 of total play time.'
+  - '$text$&aUnlocks access to build in the creative world.'
+  - '$text$&b'
+  - '$text$&7[&2Member&6+&7] &7- &6Have &b6 days &6of total play time.'
+  - '$text$&6Unlocks the commands: &b/fly&6, &b/echest'
+  - '$text$&bSet up to &a2 Homes&b!'
+  - '$text$&b'
+  - '$text$&7[&8Trusted&7] &7- &6Earned and given by the staff team.'
+  - '$text$&6Unlocks the commands: &b/fly&6, &b/echest &b/kit trusted'
+  - '$text$&b'
+  - '$text$&7[&cDonor&7] &7- &6Donate $5'
+  - '$text$&6Unlocks the commands: &b/fly&6, &b/kit Donor'
+  - '$text$&b'
+  - '$text$&7[&cDonor&6+&7] &7- &6Donate $10'
+  - '$text$&6Unlocks the commands: &b/kit Donorplus'
+  - '$text$&b'
+  - '$text$&7[&5Benefactor&7] &7- &6Donate $15'
+  - '$text$&6Unlocks the commands: &b/kit Benefactor'
+  - '$text$&b'
+  - '$text$&7[&fArtisan&7] &7- &6Donate $20'
+  - '$text$&6Unlocks the commands: &b/kit Artisan'
+  - '$text$&b'
+  - '$text$&b/timeonserver &7- &6to check your playtime. x3'
+  - '$text$&b'
+  - '$text$&6I will work on this more laters. OuO'
+  - '$text$&b'
+  - '$text$&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-'
+  
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+discordlink:
+  command: /discord
+  type: RUN_CONSOLE
+  runcmd:
+  - /tellraw @a[tag=CMDLOG] {"text":"&e[&2§lJerith&e] &a$player &eused &b/discord $multiargs&e.","color":"aqua"}
+  - '$text$&9[&2&lJerith&9]: &a&lJerith §9§lDiscord: &e&ohttps://discord.gg/95RjvwY'
+
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  permission-node: jerith.discord
+  register: true
+
+jerithb:
+  command: /jerithb
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&7[&3Jerith&7] &a$multiargs'
+
+  required_args: 1
+  error-message: "&9[&2&lJerith&9]: &b/jerithb &a[Message] &6- Broadcasts a message."
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to broadcast a message. o3o"
+  permission-required: true
+  register: false
+
+thebiggay:
+  command: /TheBigGay
+  type: RUN_CONSOLE
+  runcmd:
+  - /title @s reset
+  - /title $player title {"text":""}
+  - /title $player subtitle {"text":"&c&lThe big gay"}
+
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to broadcast a message. o3o"
+  permission-required: false
+  register: false
+  
+yiff:
+  command: /yiff
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run play minecraft:entity.villager.no master @s ~ ~ ~ 5 1
+  - '$text$&b'
+  - '$text$&6&lNope! :P'
+  - '$text$&b'
+  - '$text$&cNo, bad furry! >:( &5*Sprays with bottle*'
+  - '$text$&b'
+
+  
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+  
+staff:
+  command: /staff
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 5 1.35
+  - '$text$&6&lDisplaying staff list OuO'
+  - '$text$&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-'
+  - '$text$&7[&dMain Owner&7] &8VascoTheDog'
+  - '$text$&7[&2Owner&7] &1Brainnuggets'
+  - '$text$&7[&2Owner&7] &bKodyy'
+  - '$text$&7[&9Co-Owner&7] &dMeowMeth' #Updated MeowMeth from Head Admin to Co-Owner to reflect current position
+  - '$text$&7[&9Co-Owner&7] &dParadoxPanda' #Added as new co-owner
+  - '$text$&7[&9Co-Owner&7] &dHenrickTheBull' #Added as new co-owner
+  #Jerith Credit used to be here. Removed
+  - '$text$&7[&9Head-Admin&7] &dMegakarp' #Added as new Head-Admin
+  #Peepaw420 no longer staff
+  - '$text$&7[&3Admin&7] &4MewMMG' #Added as admin, is admin
+  - '$text$&7[&3Moderator&7] &4LazyFeeling'
+  #Beginning of moderation team
+  - '$text$&7[&3Moderator&7] &4Kuraiskrap'
+  - '$text$&7[&3Moderator&7] &4sampsonboys'
+  - '$text$&7[&3Moderator&7] &4ValSmythe'
+  - '$text$&7[&3Moderator&7] &4CongruousTunic7'
+  - '$text$&7[&3Moderator&7] &4PinkFloydFan03'
+  - '$text$&7[&3Moderator&7] &9CJFoxFurry'
+  - '$text$&7[&3Moderator&7] &1GyroDragona'
+  #End of moderation team
+  - '$text$&b'
+  - '$text$&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-'
+  
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+staffrules:
+  command: /staffrules
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 5 1.35
+  #Start staff rules taken from Staff-rules-and-guidelines from TFB Staff Discord
+  #This displays the rules for staff using /staff in chat
+  - '$text$&2&lStaff &4&lrules &6&lPage 1/1'
+  - '$text$&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-'
+  - '$text$&b'
+  - '$text$&b1 Do not abuse power such as trolling, random bans or kicks or muts nor world edit abuse nor spawning shit for players!'
+  - '$text$&b2 Do not start drama! This includes with staff or players, we''re problem solvers not problem starters!'
+  - '$text$&b3 Respect Higher Ranking Staff!  Disrespect will not be tolerated'
+  - '$text$&b4 Notify high staff if you''re going to be inactive, this way we know not to bother you and can put you on hiatus'
+  - '$text$&b5 Take staff duties seriously, there''s a time and place for everything'
+  - '$text$&b6 Log your incidents!  That way we can keep things in proper order!'
+  - '$text$&b7 Tolerate no disrespect from players.  You''re staff for a reason, take charge!'
+  - '$text$&e Staff with Console access, see Staff Discord for rules for console!'
+  - '$text$&b'
+  - '$text$&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-'
+  #End staff rules
+  
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+Jerith:
+  command: /Jerith
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 5 1.2
+  - '$text$&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-'
+  - '$text$&b&lDisplaying Jerith Stuff ^u^'
+  - '$text$&b'
+  - '$text$&b/Jerith &a- Displays this page'
+  - '$text$&b/Links &a- &2Jerith site links'
+  - '$text$&b/Discord &a- The &2Jerith &9Discord'
+  - '$text$&b/Donate &a- Displays donate thingy.'
+  - '$text$&b/Staff &a- List of staff.'
+  - '$text$&b/Ranks &a- List of ranks.'
+  - '$text$&b'
+  - '$text$&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-&a-&2-'
+
+  permission-error: "&cError: This command is offline."
+  permission-required: false
+  register: true
+  
+website:
+  command: /website
+  type: RUN_CONSOLE
+  runcmd:
+  - '$text$&9'
+  - '$text$&9[&a&lJerith&9]: §b§lWebsite: &9&ohttps://jerithai.com/'
+  - '$text$&9[&a&lJerith&9]: §b§lWebsite Backup: &9&ohttps://thefoxbox.000webhostapp.com/' #Alternate website that doesn't have current problems
+  - '$text$&9[&a&lJerith&9]: §3§lForum site: &9&ohttps://jerithai.com' #Updated to correct the word Forum spelling
+  - '$text$&9'
+
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+links:
+  command: /links
+  type: RUN_CONSOLE
+  runcmd:
+  - '$text$&9'
+  - '$text$&9[&a&lJerith&9]: §b§lWebsite: &9&ohttps://jerithai.com/'
+  - '$text$&9[&a&lJerith&9]: §b§lWebsite Backup: &9&ohttps://thefoxbox.000webhostapp.com/' #Alternate website that doesn't have current problems
+  - '$text$&9[&a&lJerith&9]: §3§lForm site: &9&ohttps://jerithai.com'
+  - '$text$&9'
+
+  permission-error: "&9[&2&lJerith&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+
+Donate:
+  command: /Donate
+  type: RUN_CONSOLE
+  runcmd:
+  - '$text$&9[&a&lJerith&9]: &bDonations are here OuO ---> &9&ohttps://jerithai.com/'
+  - '$text$&9[&a&lJerith&9]: &bIf above site fails to load you can use ---> &9&ohttps://thefoxbox.000webhostapp.com/'
+  #Above URL is alternate working version for Jerith. Domain name fails to load much of the time and has been that way for a while, 
+  #the 000webhostapp link is the same site and information as the official domain
+
+  permission-error: "&cError: Only &6jerith &ccan use this command!"
+  permission-required: false
+  register: true
