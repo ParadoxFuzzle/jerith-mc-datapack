@@ -33,8 +33,7 @@ Built for **Minecraft Java Edition 1.14.4** (`pack_format` 4).
 
 1. Copy `MyCommand/commands/*.yml` into `plugins/MyCommand/commands/`.
 2. Run `/mycmd reload` (or restart the server).
-3. `/random` is permission-gated by `jerith.random`. Grant that node, or give it to yourself,
-   otherwise the command reports a permission error.
+3. `/random` is registered in MyCommand with no permission node, so it is available to every player.
 
 ## `/random`
 
@@ -72,4 +71,4 @@ that basis.
 
 ## License
 
-MIT — see `LICENSE`.
+Apache License 2.0 — see `LICENSE`.
