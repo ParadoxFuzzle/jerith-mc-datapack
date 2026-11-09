@@ -1,6 +1,8 @@
 # Jerith — Minecraft datapack
+[![Release](https://img.shields.io/github/v/release/ParadoxFuzzle/jerith-mc-datapack?label=release)](https://github.com/ParadoxFuzzle/jerith-mc-datapack/releases) [![License](https://img.shields.io/github/license/ParadoxFuzzle/jerith-mc-datapack)](LICENSE) [![Minecraft](https://img.shields.io/badge/Minecraft-1.14.4-62b47a)](https://github.com/ParadoxFuzzle/jerith-mc-datapack)
 
-Gameplay datapack for the Jerith server: custom items, spell effects, minigames and a
+
+Gameplay datapack for the Jerith server, published alongside **[jerithai.com](https://jerithai.com)**: custom items, spell effects, minigames and a
 randomiser. Everything runs on **vanilla assets — no resource pack is required**.
 
 Built for **Minecraft Java Edition 1.14.4** (`pack_format` 4).
@@ -69,6 +71,12 @@ under a resource pack has been removed; what remains works with vanilla textures
 Keep functions small and comment what each one is for. Anything not reachable from `jerith:loops`,
 `jerith:setup`, a command, or an advancement is dead weight — the pack is periodically pruned on
 that basis.
+
+## Links
+
+- Site: [jerithai.com](https://jerithai.com)
+- Releases: [jerith-mc-datapack releases](https://github.com/ParadoxFuzzle/jerith-mc-datapack/releases)
+- Issues: [report a problem](https://github.com/ParadoxFuzzle/jerith-mc-datapack/issues)
 
 ## License
 
